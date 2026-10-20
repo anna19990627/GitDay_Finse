@@ -1,0 +1,35 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# GitDay_Finse
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of GitDay_Finse is to make a little GitHub repo
+
+
+For this repo, I made a little histogram:
+```{r, echo=FALSE}
+library(ggplot2)
+
+lil_hist <- ggplot(data = mtcars) +
+  geom_histogram(aes(x=mpg)) +
+  theme_bw()
+```
+
+Look at it here!
+```{r, echo = FALSE}
+lil_hist
+```
+
