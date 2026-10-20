@@ -24,7 +24,7 @@ For this repo, I made a little histogram:
 library(ggplot2)
 ```
 
-```{r, echo=FALSE}
+```{r, message=FALSE}
 lil_hist <- ggplot(data = mtcars) +
   geom_histogram(aes(x=mpg), fill = "darkgreen") +
   theme_bw()

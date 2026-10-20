@@ -11,6 +11,12 @@ The goal of GitDay_Finse is to make a little GitHub repo
 
 For this repo, I made a little histogram:
 
+``` r
+lil_hist <- ggplot(data = mtcars) +
+  geom_histogram(aes(x=mpg), fill = "darkgreen") +
+  theme_bw()
+```
+
 Look at it here!
 
 ``` r
